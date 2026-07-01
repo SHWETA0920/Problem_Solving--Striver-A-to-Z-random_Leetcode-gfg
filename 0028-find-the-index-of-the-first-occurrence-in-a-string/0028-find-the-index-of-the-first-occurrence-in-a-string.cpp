@@ -1,57 +1,39 @@
 class Solution {
 public:
-    vector<int> buildLPS(string pattern) {
-        int m = pattern.size();
-        vector<int> lps(m, 0);
+    vector<int> buildZ(string s) {
+        int n = s.size();
+        vector<int> z(n, 0);
 
-        int len = 0; 
-        int i = 1;
+        int l = 0, r = 0;
 
-        while(i < m){
-            if(pattern[i] == pattern[len]){
-                len++;
-                lps[i] = len;
-                i++;
-            } else {
-                if(len != 0){
-                    len = lps[len - 1];
-                } else {
-                    lps[i] = 0;
-                    i++;
-                }
+        for(int i = 1; i < n; i++){
+            if(i <= r)
+                z[i] = min(r - i + 1, z[i - l]);
+
+            while(i + z[i] < n && s[z[i]] == s[i + z[i]])
+                z[i]++;
+
+            if(i + z[i] - 1 > r){
+                l = i;
+                r = i + z[i] - 1;
             }
         }
-        return lps;
+        return z;
     }
 
     int strStr(string haystack, string needle) {
-        int n = haystack.size();
+        if(needle.empty()) return 0;
+
+        string combined = needle + "$" + haystack;
+        vector<int> z = buildZ(combined);
+
         int m = needle.size();
 
-        if(m == 0) return 0;
-
-        vector<int> lps = buildLPS(needle);
-
-        int i = 0, j = 0;
-
-        while(i < n){
-            if(haystack[i] == needle[j]){
-                i++;
-                j++;
-            }
-
-            if(j == m){
-                return i - j; 
-            }
-            else if(i < n && haystack[i] != needle[j]){
-                if(j != 0){
-                    j = lps[j - 1]; 
-                } else {
-                    i++;
-                }
+        for(int i = 0; i < z.size(); i++){
+            if(z[i] == m){
+                return i - m - 1; 
             }
         }
-
         return -1;
     }
 };
