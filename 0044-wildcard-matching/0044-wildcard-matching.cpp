@@ -1,31 +1,42 @@
 class Solution {
 public:
     bool isMatch(string s, string p) {
-        int n = s.size(), m = p.size();
-        
-        vector<vector<bool>> dp(n + 1, vector<bool>(m + 1, false));
-        
-        dp[0][0] = true;
+        int i = 0, j = 0;
+        int star = -1, match = 0;
 
-        
-        for (int j = 1; j <= m; j++) {
-            if (p[j - 1] == '*')
-                dp[0][j] = dp[0][j - 1];
-        }
+        while (i < s.length()) {
 
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= m; j++) {
-                
-                if (p[j - 1] == s[i - 1] || p[j - 1] == '?') {
-                    dp[i][j] = dp[i - 1][j - 1];
-                }
-                
-                else if (p[j - 1] == '*') {
-                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
-                }
+            // case 1: exact match or '?'
+            if (j < p.length() && (s[i] == p[j] || p[j] == '?')) {
+                i++;
+                j++;
+            }
+
+            // case 2: '*' found
+            else if (j < p.length() && p[j] == '*') {
+                star = j;       // remember position of '*'
+                match = i;      // remember match start
+                j++;            // move pattern forward
+            }
+
+            // case 3: mismatch but we saw a '*'
+            else if (star != -1) {
+                j = star + 1;   // go after '*'
+                match++;        // try to match one more char
+                i = match;
+            }
+
+            // case 4: mismatch and no '*'
+            else {
+                return false;
             }
         }
 
-        return dp[n][m];
+        // remaining pattern should be all '*'
+        while (j < p.length() && p[j] == '*') {
+            j++;
+        }
+
+        return j == p.length();
     }
 };
