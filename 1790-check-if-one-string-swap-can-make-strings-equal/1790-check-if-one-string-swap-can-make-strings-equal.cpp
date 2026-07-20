@@ -1,21 +1,25 @@
 class Solution {
 public:
     bool areAlmostEqual(string s1, string s2) {
-        if(s1.size() != s2.size()) return false;
+        if(s1.length()!=s2.length()) return false;
 
-        vector<int> diff;
+        vector<int> v;
 
-        for(int i = 0; i < s1.size(); i++) {
+        for(int i=0; i<s1.length(); i++) {
             if(s1[i] != s2[i]) {
-                diff.push_back(i);
+                v.push_back(i);
             }
         }
 
-        if(diff.size() == 0) return true;
+        if(v.size() == 0) return true;
 
-        if(diff.size() != 2) return false;
+        if(v.size() != 2) return false;
 
-        return (s1[diff[0]] == s2[diff[1]] &&
-                s1[diff[1]] == s2[diff[0]]);
+        if(s1[v[0]] == s2[v[1]] && 
+           s1[v[1]] == s2[v[0]]) {
+            return true;
+        }
+
+        return false;
     }
 };
