@@ -142,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0029-divide-two-integers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0029-divide-two-integers) |
 | [0070-climbing-stairs](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0070-climbing-stairs) |
 | [0368-largest-divisible-subset](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0368-largest-divisible-subset) |
+| [0371-sum-of-two-integers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0371-sum-of-two-integers) |
 | [0486-predict-the-winner](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0877-stone-game) |
 | [0887-super-egg-drop](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0887-super-egg-drop) |
@@ -471,6 +472,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0029-divide-two-integers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0029-divide-two-integers) |
 | [0190-reverse-bits](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0190-reverse-bits) |
+| [0371-sum-of-two-integers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0371-sum-of-two-integers) |
 ## Game Theory
 |  |
 | ------- |
