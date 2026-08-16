@@ -101,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0200-number-of-islands) |
 | [0213-house-robber-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0213-house-robber-ii) |
+| [0283-move-zeroes](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0300-longest-increasing-subsequence) |
 | [0312-burst-balloons](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0312-burst-balloons) |
 | [0368-largest-divisible-subset](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0368-largest-divisible-subset) |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0018-4sum) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0165-compare-version-numbers) |
+| [0283-move-zeroes](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0283-move-zeroes) |
 | [0295-find-median-from-data-stream](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0295-find-median-from-data-stream) |
 | [0345-reverse-vowels-of-a-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0345-reverse-vowels-of-a-string) |
 | [0392-is-subsequence](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0392-is-subsequence) |
