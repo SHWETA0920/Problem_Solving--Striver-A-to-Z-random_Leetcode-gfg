@@ -1,26 +1,42 @@
 class Solution {
 public:
     bool closeStrings(string word1, string word2) {
-        int n=word1.length();
-        int m=word2.length();
-        vector<int>f1(26);
-        vector<int>f2(26);
-        for(int i=0;i<n;i++){
-            f1[word1[i]-'a']++;
-        }
-        for(int i=0;i<m;i++){
-            f2[word2[i]-'a']++;
-        }
-        for(int i=0;i<=25;i++){
-            if(f1[i]!=0 && f2[i]==0) return false;
-            if(f1[i]==0 && f2[i]!=0) return false;
+        if (word1.size() != word2.size())
+            return false;
 
+        vector<int> v1(26);
+        vector<int> v2(26);
+
+        for (auto x : word1) {
+            v1[x - 'a']++;
         }
-        sort(f1.begin(),f1.end());
-        sort(f2.begin(),f2.end());
-        for(int i=0;i<=25;i++){
-            if(f1[i]!=f2[i] ) return false;
+
+        for (auto x : word2) {
+            v2[x - 'a']++;
         }
-        return true;        
+
+        for (int i = 0; i < 26; i++) {
+            if ((v1[i] == 0 && v2[i] != 0) ||
+                (v1[i] != 0 && v2[i] == 0))
+                return false;
+        }
+
+        unordered_map<int, int> m;
+
+        for (int i = 0; i < 26; i++) {
+            if (v1[i] != 0)
+                m[v1[i]]++;
+        }
+
+        for (int i = 0; i < 26; i++) {
+            if (v2[i] != 0) {
+                if (m.find(v2[i]) == m.end() || m[v2[i]] == 0)
+                    return false;
+
+                m[v2[i]]--;
+            }
+        }
+
+        return true;
     }
 };
