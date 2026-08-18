@@ -5,34 +5,31 @@ public:
         int n = nums2.size();
 
         vector<vector<int>> ans;
-        unordered_map<int, int> mp;
+        unordered_map<int, int> mp1;
+        unordered_map<int, int> mp2;
+
+        for (auto x : nums1) {
+            mp1[x]++;
+        }
 
         for (auto x : nums2) {
-            mp[x]++;
+            mp2[x]++;
         }
 
         vector<int> x;
 
-        for (int i = 0; i < m; i++) {
-            if (mp.find(nums1[i]) == mp.end()) {
-                x.push_back(nums1[i]);
+        for (auto it : mp1) {
+            if (mp2.find(it.first) == mp2.end()) {
+                x.push_back(it.first);
             }
         }
-
-        unordered_set<int> st(x.begin(), x.end());
-        x.assign(st.begin(), st.end());
 
         ans.push_back(x);
 
         vector<int> y;
-        unordered_map<int, int> mp2;
 
-        for (auto x : nums1) {
-            mp2[x]++;
-        }
-
-        for (auto it : mp) {
-            if (mp2.find(it.first) == mp2.end()) {
+        for (auto it : mp2) {
+            if (mp1.find(it.first) == mp1.end()) {
                 y.push_back(it.first);
             }
         }
