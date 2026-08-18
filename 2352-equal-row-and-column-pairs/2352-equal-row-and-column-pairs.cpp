@@ -1,28 +1,32 @@
 class Solution {
 public:
     int equalPairs(vector<vector<int>>& grid) {
-        vector<vector<int>> row, col;
+        vector<string> row, col;
 
         int m = grid.size();
         int n = grid[0].size();
 
         for (int i = 0; i < m; i++) {
-            vector<int> v;
+            string s = "";
+
             for (int j = 0; j < n; j++) {
-                v.push_back(grid[i][j]);
+                s += to_string(grid[i][j]) + "#";
             }
-            row.push_back(v);
+
+            row.push_back(s);
         }
 
         for (int i = 0; i < n; i++) {
-            vector<int> v;
+            string s = "";
+
             for (int j = 0; j < m; j++) {
-                v.push_back(grid[j][i]);
+                s += to_string(grid[j][i]) + "#";
             }
-            col.push_back(v);
+
+            col.push_back(s);
         }
 
-        map<vector<int>, int> mp;
+        unordered_map<string, int> mp;
 
         for (auto x : row) {
             mp[x]++;
