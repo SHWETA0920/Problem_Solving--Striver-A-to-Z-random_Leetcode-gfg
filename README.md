@@ -88,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1563-stone-game-v](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1563-stone-game-v) |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
 | [1857-largest-color-value-in-a-directed-graph](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1857-largest-color-value-in-a-directed-graph) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 | [1884-egg-drop-with-2-eggs-and-n-floors](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1884-egg-drop-with-2-eggs-and-n-floors) |
 | [2926-maximum-balanced-subsequence-sum](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2926-maximum-balanced-subsequence-sum) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -131,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1563-stone-game-v](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1563-stone-game-v) |
 | [1662-check-if-two-string-arrays-are-equivalent](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1662-check-if-two-string-arrays-are-equivalent) |
 | [1671-minimum-number-of-removals-to-make-mountain-array](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1671-minimum-number-of-removals-to-make-mountain-array) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2029-stone-game-ix) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2215-find-the-difference-of-two-arrays](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2215-find-the-difference-of-two-arrays) |
@@ -192,6 +194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1563-stone-game-v) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 | [1884-egg-drop-with-2-eggs-and-n-floors](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1884-egg-drop-with-2-eggs-and-n-floors) |
 | [1903-largest-odd-number-in-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1903-largest-odd-number-in-string) |
 | [1927-sum-game](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1927-sum-game) |
@@ -562,6 +565,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1563-stone-game-v) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 | [1927-sum-game](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2029-stone-game-ix) |
 ## Hash Function
@@ -587,17 +591,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1140-stone-game-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1510-stone-game-iv) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2029-stone-game-ix) |
 ## Prefix Sum
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0238-product-of-array-except-self) |
 | [1140-stone-game-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1140-stone-game-ii) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 ## Zero-Sum Game
 |  |
 | ------- |
 | [1140-stone-game-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1510-stone-game-iv) |
+| [1872-stone-game-viii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2029-stone-game-ix) |
 ## Nim Game
 |  |
