@@ -3,12 +3,18 @@ public:
     int largestAltitude(vector<int>& gain) {
         int n = gain.size();
 
-        int altitude = 0;
-        int maxi = 0;
+        vector<int> pref(n + 1);
 
-        for(int i = 0; i < n; i++) {
-            altitude += gain[i];
-            maxi = max(maxi, altitude);
+        pref[0] = 0;
+
+        for(int i = 1; i <= n; i++) {
+            pref[i] = pref[i - 1] + gain[i - 1];
+        }
+
+        int maxi = pref[0];
+
+        for(int i = 1; i <= n; i++) {
+            maxi = max(maxi, pref[i]);
         }
 
         return maxi;
