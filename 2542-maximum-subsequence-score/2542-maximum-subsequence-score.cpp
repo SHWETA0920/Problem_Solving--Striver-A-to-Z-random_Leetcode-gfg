@@ -1,40 +1,43 @@
 class Solution {
 public:
     long long maxScore(vector<int>& nums1, vector<int>& nums2, int k) {
-        
-        int n = nums1.size();
+        int m = nums1.size();
+        int n = nums2.size();
 
-        // {nums2, nums1}
-        vector<pair<int, int>> v;
+        priority_queue<pair<int, int>,
+                       vector<pair<int, int>>,
+                       greater<pair<int, int>>> pq;
 
-        for (int i = 0; i < n; i++) {
-            v.push_back({nums2[i], nums1[i]});
+        for (int i = 0; i < m; i++) {
+            pq.push({nums2[i], nums1[i]});
         }
 
-        // Sort by nums2 in descending order
-        sort(v.begin(), v.end(), greater<pair<int, int>>());
+        vector<int> p; // nums2
+        vector<int> q; // nums1
 
-        // Min heap to keep k largest nums1 values
-        priority_queue<int, vector<int>, greater<int>> pq;
+        while (!pq.empty()) {
+            p.push_back(pq.top().first);
+            q.push_back(pq.top().second);
+            pq.pop();
+        }
 
+        long long ans = 0;  // FIXED
         long long sum = 0;
-        long long ans = 0;
 
-        for (int i = 0; i < n; i++) {
+        priority_queue<int, vector<int>, greater<int>> temp;
 
-            // Add current nums1
-            pq.push(v[i].second);
-            sum += v[i].second;
+        for (int i = n - 1; i >= 0; i--) {
 
-            // Keep only k largest nums1 values
-            if (pq.size() > k) {
-                sum -= pq.top();
-                pq.pop();
+            temp.push(q[i]);
+            sum += q[i];
+
+            if (temp.size() > k) {
+                sum -= temp.top();
+                temp.pop();
             }
 
-            // We can calculate score only when we have k elements
-            if (pq.size() == k) {
-                ans = max(ans, sum * v[i].first);
+            if (temp.size() == k) {
+                ans = max(ans, sum * p[i]);
             }
         }
 
