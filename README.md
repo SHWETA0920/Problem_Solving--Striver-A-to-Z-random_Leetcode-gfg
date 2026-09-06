@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0072-edit-distance](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0072-edit-distance) |
 | [0079-word-search](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0079-word-search) |
 | [0087-scramble-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0087-scramble-string) |
+| [0115-distinct-subsequences](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0115-distinct-subsequences) |
 | [0132-palindrome-partitioning-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0132-palindrome-partitioning-ii) |
 | [0151-reverse-words-in-a-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0151-reverse-words-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0165-compare-version-numbers) |
@@ -64,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0070-climbing-stairs) |
 | [0072-edit-distance](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0072-edit-distance) |
 | [0087-scramble-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0087-scramble-string) |
+| [0115-distinct-subsequences](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0115-distinct-subsequences) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0132-palindrome-partitioning-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0132-palindrome-partitioning-ii) |
 | [0152-maximum-product-subarray](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0152-maximum-product-subarray) |
