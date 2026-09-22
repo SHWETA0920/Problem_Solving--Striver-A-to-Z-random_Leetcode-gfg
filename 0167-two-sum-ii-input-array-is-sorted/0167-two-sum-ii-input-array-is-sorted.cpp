@@ -1,20 +1,20 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& num, int sum) {
-        unordered_map<int,int>mp;
+        // since it is sorted , we can do by two pointer concept
+        int n=num.size()-1;
+        int i=0,j=n;        
         vector<int>ans;
-        int n=num.size();
-        for(int i=0;i<n;i++){
-            mp[num[i]]=i;
-        }
-        for(int i=0;i<n;i++){
+        while(i<j){
             int x=sum-num[i];
-            if(mp.find(x)!=mp.end()){
+            if(num[j]>x) j--;
+            else if(num[j]<x) i++;
+            else{
                 ans.push_back(i+1);
-                ans.push_back(mp[x]+1);
+                ans.push_back(j+1);
                 break;
             }
         }
-        return ans;      
+        return ans;
     }
 };
