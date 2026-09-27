@@ -1,28 +1,50 @@
 class Solution {
 public:
     string reverseParentheses(string s) {
-        stack<string> st;
-        string curr = "";
+        int n = s.length();
+        int i = 0;
 
-        for (char c : s) {
+        stack<char> st;
+        deque<char> dq;
 
-            if (c == '(') {
-                st.push(curr);
-                curr = "";
-            }
+        while (i < n) {
 
-            else if (c == ')') {
-                reverse(curr.begin(), curr.end());
+            if (s[i] == ')') {
 
-                curr = st.top() + curr;
+                // Take elements until '('
+                while (!st.empty() && st.top() != '(') {
+                    dq.push_back(st.top());
+                    st.pop();
+                }
+
+                // Remove '('
                 st.pop();
+
+                // Put reversed part back into stack
+                while (!dq.empty()) {
+                    st.push(dq.front());
+                    dq.pop_front();
+                }
+            }
+            else {
+                st.push(s[i]);
             }
 
-            else {
-                curr += c;
-            }
+            i++;
         }
 
-        return curr;
+        string ans = "";
+
+        while (!st.empty()) {
+            dq.push_front(st.top());
+            st.pop();
+        }
+
+        while (!dq.empty()) {
+            ans += dq.front();
+            dq.pop_front();
+        }
+
+        return ans;
     }
 };
