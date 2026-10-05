@@ -1,14 +1,16 @@
 class Solution {
 public:
     bool checkString(string s) {
-        int n = s.length();
-        stack<char> st;
+        bool seenB = false;
 
         for (char c : s) {
-            if (!st.empty() && st.top() == 'b' && c == 'a')
+            if (c == 'b') {
+                seenB = true;
+            }
+            
+            if (seenB && c == 'a') {
                 return false;
-
-            st.push(c);
+            }
         }
 
         return true;
