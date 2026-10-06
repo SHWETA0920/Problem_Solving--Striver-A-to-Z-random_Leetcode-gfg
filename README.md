@@ -116,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1140-stone-game-ii) |
 | [1143-longest-common-subsequence](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1143-longest-common-subsequence) |
 | [1162-as-far-from-land-as-possible](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1162-as-far-from-land-as-possible) |
+| [1186-maximum-subarray-sum-with-one-deletion](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1372-longest-zigzag-path-in-a-binary-tree) |
 | [1373-maximum-sum-bst-in-binary-tree](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1373-maximum-sum-bst-in-binary-tree) |
@@ -181,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1048-longest-string-chain](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1048-longest-string-chain) |
 | [1140-stone-game-ii](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1140-stone-game-ii) |
 | [1162-as-far-from-land-as-possible](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1162-as-far-from-land-as-possible) |
+| [1186-maximum-subarray-sum-with-one-deletion](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1186-maximum-subarray-sum-with-one-deletion) |
 | [1207-unique-number-of-occurrences](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1207-unique-number-of-occurrences) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
 | [1353-maximum-number-of-events-that-can-be-attended](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1353-maximum-number-of-events-that-can-be-attended) |
