@@ -1,30 +1,34 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
-    void dfs(TreeNode* root, unordered_map<int, int>& m) {
-        if (!root)
-            return;
-        m[root->val]++;
-        if (root->left)
-            dfs(root->left, m);
-        if (root->right)
-            dfs(root->right, m);
+    void inorder(TreeNode* root, vector<int>&ans){
+        if(root==NULL) return;
+        inorder(root->left,ans);
+        ans.push_back(root->val);
+        inorder(root->right,ans);
     }
     bool findTarget(TreeNode* root, int k) {
-        unordered_map<int, int> mp;
-        dfs(root, mp);
-
-        for (auto it : mp) {
-            int val = it.first;
-            int rem = k - val;
-
-            if (rem == val) {
-                if (it.second > 1)
-                    return true;
-            } else {
-                if (mp.find(rem) != mp.end())
-                    return true;
-            }
+        vector<int>ans;
+        inorder(root,ans);
+        int i=0,j=ans.size()-1;
+        while(i<j){
+            int sum=ans[i]+ans[j];
+            if(sum==k) return true;
+            else if(sum>k) j--;
+            else i++;
+            
         }
         return false;
+        
     }
 };
