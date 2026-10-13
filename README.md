@@ -983,9 +983,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Lifting
 |  |
 | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 ## Lowest Common Ancestor
 |  |
 | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 <!---LeetCode Topics End-->
