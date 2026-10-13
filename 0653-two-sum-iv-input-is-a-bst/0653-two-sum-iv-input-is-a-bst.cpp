@@ -1,34 +1,73 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+
 class Solution {
 public:
-    void inorder(TreeNode* root, vector<int>&ans){
-        if(root==NULL) return;
-        inorder(root->left,ans);
-        ans.push_back(root->val);
-        inorder(root->right,ans);
-    }
-    bool findTarget(TreeNode* root, int k) {
-        vector<int>ans;
-        inorder(root,ans);
-        int i=0,j=ans.size()-1;
-        while(i<j){
-            int sum=ans[i]+ans[j];
-            if(sum==k) return true;
-            else if(sum>k) j--;
-            else i++;
-            
+    // Returns the next smallest node
+    TreeNode* ascending(stack<TreeNode*>& st) {
+        TreeNode* curr = st.top();
+        st.pop();
+
+        TreeNode* node = curr->right;
+
+        while (node != nullptr) {
+            st.push(node);
+            node = node->left;
         }
+
+        return curr;
+    }
+
+    // Returns the next largest node
+    TreeNode* descending(stack<TreeNode*>& st) {
+        TreeNode* curr = st.top();
+        st.pop();
+
+        TreeNode* node = curr->left;
+
+        while (node != nullptr) {
+            st.push(node);
+            node = node->right;
+        }
+
+        return curr;
+    }
+
+    bool findTarget(TreeNode* root, int k) {
+        if (root == nullptr) return false;
+
+        stack<TreeNode*> s1, s2;
+
+        TreeNode* curr = root;
+
+        // Initialize ascending stack
+        while (curr != nullptr) {
+            s1.push(curr);
+            curr = curr->left;
+        }
+
+        curr = root;
+
+        // Initialize descending stack
+        while (curr != nullptr) {
+            s2.push(curr);
+            curr = curr->right;
+        }
+
+        TreeNode* left = s1.top();
+        TreeNode* right = s2.top();
+
+        while (left != right && left->val < right->val) {
+            int sum = left->val + right->val;
+
+            if (sum == k)
+                return true;
+
+            else if (sum < k)
+                left = ascending(s1);
+
+            else
+                right = descending(s2);
+        }
+
         return false;
-        
     }
 };
