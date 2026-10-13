@@ -3,52 +3,34 @@ class Solution {
 public:
     bool wordPattern(string pattern, string s) {
         int n = pattern.size();
-        unordered_map<string, int> mp;
+        unordered_map<char, string> mp;
+        unordered_map<string, char> mp1;
+
         int i = 0, j = 0;
 
         while (j < s.size()) {
             string ans = "";
-            int start = j;
 
-            while (j < s.size() && s[j] != ' ') j++;
+            while (j < s.size() && s[j] != ' ') {
+                ans += s[j];
+                j++;
+            }
 
-            ans = s.substr(start, j - start);
-            j++;
-
-            mp[ans]++;
-            i++;
-        }
-
-        if (i != n) return false;
-
-        unordered_map<char, int> mp1;
-        for (char c : pattern) mp1[c]++;
-
-        if (mp.size() != mp1.size()) return false;
-
-        unordered_map<char, string> mp2;
-        unordered_map<string, char> mp3;
-
-        i = 0;
-        j = 0;
-
-        while (j < s.size()) {
-            int start = j;
-            while (j < s.size() && s[j] != ' ') j++;
-
-            string ans = s.substr(start, j - start);
             char c = pattern[i];
 
-            if (mp2.count(c) && mp2[c] != ans) return false;
-            if (mp3.count(ans) && mp3[ans] != c) return false;
+            if (mp.count(c) && mp[c] != ans)
+                return false;
 
-            mp2[c] = ans;
-            mp3[ans] = c;
+            if (mp1.count(ans) && mp1[ans] != c)
+                return false;
+
+            mp[c] = ans;
+            mp1[ans] = c;
 
             i++;
             j++;
         }
 
-        return true;
+        return i == n;
     }
 };
