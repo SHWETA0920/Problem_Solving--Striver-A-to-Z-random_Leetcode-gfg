@@ -1,38 +1,19 @@
 class Solution {
 public:
-    void helper(TreeNode* root, vector<int> v, vector<vector<int>>& ans) {
-        if (root == NULL) return;
+    int helper(TreeNode* root, int curr) {
+        if (root == NULL) return 0;
+
+        curr = curr * 10 + root->val;
 
         if (root->left == NULL && root->right == NULL) {
-            v.push_back(root->val);
-            ans.push_back(v);
-            return;
+            return curr;
         }
 
-        v.push_back(root->val);
-        helper(root->left, v, ans);
-        helper(root->right, v, ans);
+        return helper(root->left, curr) +
+               helper(root->right, curr);
     }
 
     int sumNumbers(TreeNode* root) {
-        vector<vector<int>> ans;
-        vector<int> v;
-
-        helper(root, v, ans);
-
-        int sum = 0;
-
-        for (int i = 0; i < ans.size(); i++) {
-            int no = 0;
-
-            for (int j = 0; j < ans[i].size(); j++) {
-                no = no * 10;
-                no += ans[i][j];
-            }
-
-            sum += no;
-        }
-
-        return sum;
+        return helper(root, 0);
     }
 };
