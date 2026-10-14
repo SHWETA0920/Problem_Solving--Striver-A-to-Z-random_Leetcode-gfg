@@ -16,7 +16,6 @@ public:
         if(root==NULL) return 0;
         q.push(root);
         int depth=0;
-        int mini=INT_MAX;
         while(q.size()>0){            
             int n=q.size();
             depth++;
@@ -25,9 +24,9 @@ public:
                 q.pop();
                 if(node->left!=NULL) q.push(node->left);
                 if(node->right!=NULL) q.push(node->right);
-                if(node->left==NULL && node->right==NULL) mini=min(depth,mini);
+                if(node->left==NULL && node->right==NULL) return depth;
             }
         }
-        return mini;        
+        return depth;        
     }
 };
