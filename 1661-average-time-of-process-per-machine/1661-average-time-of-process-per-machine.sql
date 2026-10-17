@@ -1,6 +1,10 @@
-select machine_id,round((sum(p.proc)/count(*)),3) as processing_time from
-(select a.machine_id, a.process_id ,(max(a.timestamp)-min(a.timestamp)) as proc
-from activity as a inner join 
-activity as aa where aa.machine_id=a.machine_id 
-and aa.process_id=a.process_id
-group by a.machine_id,a.process_id) as p group by machine_id;
+SELECT machine_id,
+       ROUND(SUM(p.proc) / COUNT(*), 3) AS processing_time
+FROM (
+    SELECT a.machine_id,
+           a.process_id,
+           MAX(a.timestamp) - MIN(a.timestamp) AS proc
+    FROM Activity AS a
+    GROUP BY a.machine_id, a.process_id
+) AS p
+GROUP BY machine_id;
