@@ -313,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0368-largest-divisible-subset) |
 | [0371-sum-of-two-integers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0371-sum-of-two-integers) |
 | [0486-predict-the-winner](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0486-predict-the-winner) |
+| [0779-k-th-symbol-in-grammar](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0779-k-th-symbol-in-grammar) |
 | [0877-stone-game](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0877-stone-game) |
 | [0887-super-egg-drop](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0887-super-egg-drop) |
 | [0899-orderly-queue](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0899-orderly-queue) |
@@ -568,6 +569,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0206-reverse-linked-list](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0206-reverse-linked-list) |
 | [0394-decode-string](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0394-decode-string) |
 | [0486-predict-the-winner](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0486-predict-the-winner) |
+| [0779-k-th-symbol-in-grammar](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0779-k-th-symbol-in-grammar) |
 | [1106-parsing-a-boolean-expression](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1106-parsing-a-boolean-expression) |
 | [2487-remove-nodes-from-linked-list](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2487-remove-nodes-from-linked-list) |
 | [3483-unique-3-digit-even-numbers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/3483-unique-3-digit-even-numbers) |
@@ -930,6 +932,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0338-counting-bits](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0338-counting-bits) |
 | [0371-sum-of-two-integers](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0371-sum-of-two-integers) |
 | [0461-hamming-distance](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0461-hamming-distance) |
+| [0779-k-th-symbol-in-grammar](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/0779-k-th-symbol-in-grammar) |
 | [1318-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1318-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [1386-cinema-seat-allocation](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/1386-cinema-seat-allocation) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/SHWETA0920/Problem_Solving--Striver-A-to-Z-random_Leetcode-gfg/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
