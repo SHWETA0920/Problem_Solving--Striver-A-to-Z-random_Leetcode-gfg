@@ -20,7 +20,7 @@ public:
             solve(root->left, s);
             s += ")";
         }
-        else if(root->right != nullptr) {
+        else if(root->left == nullptr) {
             s += "()";
         }
 
